@@ -1,5 +1,11 @@
 # Algae Growth Monitoring 
-> The main purpose of this project is to help researchers keep track of natural conditions in the pool for algae cultivation. This link leads to the archive of the project.
+> Hydro Bot-an algal growth monitoring robot will help to solve the above issue
+
+> The bot is aimed to look after the various parameters that will help in the uniform growth of algae.
+
+> Uniform growth of algae is much needed to use it for beneficial purposes such as bio-fuel, vegan leather etc...
+
+> An application is integrated to view the parameters that is being monitored
 
 ## Table of Contents
 1. [Summary](#Summary) 
@@ -9,14 +15,19 @@
 
 
 ## Summary 
-Component: Raspberry Pi 3 model B+ , PCB board with TSL2561, MAX31865, AtlasScientific, ADS1x15.
+Component: Raspberry Pi 3 model + 3D Model planner, PCB board with TSL2561, MAX31865, AtlasScientific, ADS1x15.
 
 <img src = "https://user-images.githubusercontent.com/32799668/75661459-064fa280-5c76-11ea-93fa-31cb0b0f8174.png" width = "200">
 
-The project is capable of:
-- Monitoring agriculture factor( light, temperature, pH) 24/7, publishing these data to cloud using MQTT protocol.
-- Calibrating sensors via website.
+## The project is capable of:
 
+- The proposed idea is a bot integrated with various sensors to monitor the equal spread of nutrients contents. These sensors will be attached to the WIFI module and send the data to the cloud database. Then these values have been retrieved in a mobile application..
+
+## How we built it
+
+• We have made a miniature floating bot. This bot will be integrated with various sensors. These sensor values will be sent into the firebase real-time database using the WiFi module. Then these values will be shown in the app. 
+
+• We also plan extend by automate the bot using Machine Planner.
 Project structure:
 
 ```bash
@@ -86,7 +97,7 @@ UI for calibration:
 ## Installation
 
 ``` 
-$> sudo git clone https://github.com/anhtumai/algae_growth.git
+$> sudo git clone ****
 $> sudo pip3 install numpy, paho-mqtt, socketIO_client_nexus
 $> sudo python3 main.py
 $> cd Server 
